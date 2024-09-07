@@ -45,7 +45,7 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: download Linux Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v1.0.0
         with:
           name: linux
       - name: Run Script
@@ -59,6 +59,6 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
       - name: Download Windows Artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v1.0.0
         with:
           name: windows
